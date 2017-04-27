@@ -1,6 +1,6 @@
-<h1><%= @name1 %> VS <%= @name2 %></h1>
+<h1><%= @name1 %> <%hp_1 = 100%>  VS <%= @name2 %></h1>
 
 <form action="/attack" method="post">
   <button type="submit" value="submit">Attack</button>
 </form>
-<p>60/60 HP</p>
+<p><%=p hp_1 %>/100 HP</p>
