@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require_relative './lib/player.rb'
+require_relative './lib/game.rb'
 
 class Battle < Sinatra::Base
 
@@ -22,14 +23,11 @@ class Battle < Sinatra::Base
   end
 
   get '/play' do
-    $player_1.name
-    $player_2.hp
-    $player_2.name
+    $game = Game.new
     erb(:play)
   end
 
   post '/attack' do
-    $player_2.hp
     erb(:attack)
   end
 
