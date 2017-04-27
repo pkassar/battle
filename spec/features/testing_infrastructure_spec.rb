@@ -16,6 +16,6 @@ feature 'enables players to attack each other' do
   scenario 'player 1 attacks player 2' do
     sign_in_and_play
     click_button('Attack')
-    expect(page).to have_content 'Attack!'
+    expect(page).to have_content 'Attacked!'
   end
 end

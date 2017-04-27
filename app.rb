@@ -24,4 +24,9 @@ class Battle < Sinatra::Base
 
     erb(:play)
   end
+
+  post '/attack' do
+      erb(:attack)
+  end
+
 end
