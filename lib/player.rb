@@ -11,3 +11,6 @@ class Player
     @hp -= 10
   end
 end
+
+
+#random text
