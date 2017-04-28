@@ -2,9 +2,9 @@
 <h3><%= $game.player1.name %> hp:<%= $game.player1.hp %>/100</h3>
 <h3><%= $game.player2.name %> hp:<%= $game.player2.hp %>/100</h3>
 <form action="/player_1_attacked" method="post">
-  <button type="submit" value="submit">Attack Player 1</button>
+  <button type="submit" value="submit">Attack <%= $game.player1.name %></button>
 </form>
 
 <form action="/player_2_attacked" method="post">
-  <button type="submit" value="submit">Attack Player 2</button>
+  <button type="submit" value="submit">Attack <%= $game.player2.name %></button>
 </form>
