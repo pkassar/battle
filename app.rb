@@ -23,8 +23,12 @@ class Battle < Sinatra::Base
     erb(:play)
   end
 
-  post '/attack' do
-    erb(:attack)
+  post '/player_1_attacked' do
+    erb(:player_1_attacked)
+  end
+
+  post '/player_2_attacked' do
+    erb(:player_2_attacked)
   end
 
 end
