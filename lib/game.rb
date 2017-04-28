@@ -13,4 +13,5 @@ class Game
     @player2.receive_damage if player == :player2
     @player1.receive_damage if player == :player1
   end
+
 end
