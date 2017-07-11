@@ -1,2 +1,2 @@
 # Battle
-Battle excercise for MA week 4
+Battle exercise for MA week 4
